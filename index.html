@@ -746,30 +746,20 @@ to{transform:translateX(0)}}
             </div>
           </div>
           <div class="nmatch" onclick="openFixture()" style="cursor:pointer;">
-            <div class="nmbadge"><div class="nmbm">MAR</div><div class="nmbd">29</div></div>
+            <div class="nmbadge"><div class="nmbd">2027</div></div>
             <div>
-              <div class="nmtag">📅 UPCOMING · 6TH EDITION</div>
-              <div class="nmtitle">BATTLE OF THE SAINTS NZ 2026</div>
-              <div class="nmsub">Alex Moore Park, Wellington · 35 Overs</div>
+              <div class="nmtag">📅 UPCOMING · 7TH EDITION</div>
+              <div class="nmtitle">BATTLE OF THE SAINTS NZ 2027</div>
+              <div class="nmsub">Auckland</div>
             </div>
           </div>
-          <div class="nmatch" onclick="openFoodMenu()" style="cursor:pointer;border:1px solid rgba(255,215,0,0.3);background:rgba(255,215,0,0.04);margin-top:10px;">
-            <div class="nmbadge" style="background:rgba(255,215,0,0.15);border:1px solid rgba(255,215,0,0.4);">
-              <div class="nmbm">FOOD</div>
-              <div style="font-size:1.4rem;line-height:1;">🍽️</div>
-            </div>
-            <div>
-              <div class="nmtag" style="color:var(--gold);">🍽️ MATCHDAY MENU</div>
-              <div class="nmtitle">Food Menu — 2026 Edition</div>
-              <div class="nmsub">View what's available at the ground</div>
-            </div>
-          </div>
+          
           <div class="scard">
             <div class="shdr">
-              <div class="steam j"><div class="sname">ST. JOSEPH'S COLLEGE OBU NZ</div><div class="swins">1</div><div class="slbl">WIN</div><div class="syrs">2021</div></div>
+              <div class="steam j"><div class="sname">ST. JOSEPH'S COLLEGE OBU NZ</div><div class="swins">2</div><div class="slbl">WINS</div><div class="syrs">2021 &amp; 2026</div></div>
               <div class="steam p"><div class="sname">ST. PETER'S COLLEGE OBU NZ</div><div class="swins">4</div><div class="slbl">WINS</div><div class="syrs">2022, 2023, 2024 &amp; 2025</div></div>
             </div>
-            <div class="sfoot"><strong>Peterites lead the series 4–1</strong><br><span style="font-size:9px">across 5 editions (2021–2025)</span></div>
+            <div class="sfoot"><strong>Peterites lead the series 4–2</strong><br><span style="font-size:9px">across 6 editions (2021–2026)</span></div>
           </div>
           <div style="height:10px"></div>
         </div>
@@ -777,6 +767,7 @@ to{transform:translateX(0)}}
         <!-- RESULTS -->
         <div class="panel" id="p-results">
           <div class="shd"><div class="spre">All Editions</div><h2 class="stitle">Match <span class="ac">History</span></h2></div>
+          <div class="ri" data-yr="2026"><div class="riname">6TH BATTLE OF THE SAINTS NZ</div><div class="ritop"><div class="riyr">2026</div><div class="riinfo"><div class="ricity">📍 WELLINGTON</div><div class="riovrs">35 OVERS</div></div><div class="riwb j">🏆<br>JOES<br>WON BY 3 RUNS</div></div><div class="riscr"><span class="sj">St. Joseph's 152/10</span> vs <span class="sp">St. Peter's 149/10</span></div><div class="ribot"><span class="potlbl">POTM</span><span class="potnm">Keshan Perera (91)</span><span class="potsch j">SJC</span></div></div>
           <div class="ri" data-yr="2025"><div class="riname">5TH BATTLE OF THE SAINTS NZ</div><div class="ritop"><div class="riyr">2025</div><div class="riinfo"><div class="ricity">📍 AUCKLAND</div><div class="riovrs">35 OVERS</div></div><div class="riwb p">🏆<br>PETERITES<br>WON BY 5 WICKETS</div></div><div class="riscr"><span class="sj">St. Joseph's 180/10</span> vs <span class="sp">St. Peter's 182/5</span></div><div class="ribot"><span class="potlbl">POTM</span><span class="potnm">Shannon Wimalaratne (67)</span><span class="potsch p">SPC</span></div></div>
           <div class="ri" data-yr="2024"><div class="riname">4TH BATTLE OF THE SAINTS NZ</div><div class="ritop"><div class="riyr">2024</div><div class="riinfo"><div class="ricity">📍 WELLINGTON</div><div class="riovrs">35 OVERS</div></div><div class="riwb p">🏆<br>PETERITES<br>WON BY 44 RUNS</div></div><div class="riscr"><span class="sp">St. Peter's 231/9</span> vs <span class="sj">St. Joseph's 187/10</span></div><div class="ribot"><span class="potlbl">POTM</span><span class="potnm">Shevon Perera (C) (52, 3/28)</span><span class="potsch p">SPC</span></div></div>
           <div class="ri" data-yr="2023"><div class="riname">3RD BATTLE OF THE SAINTS NZ</div><div class="ritop"><div class="riyr">2023</div><div class="riinfo"><div class="ricity">📍 AUCKLAND</div><div class="riovrs">35 OVERS</div></div><div class="riwb p">🏆<br>PETERITES<br>WON BY 5 WICKETS</div></div><div class="riscr"><span class="sj">St. Joseph's 153/10</span> vs <span class="sp">St. Peter's 158/5</span></div><div class="ribot"><span class="potlbl">POTM</span><span class="potnm">Santhush Gunatilake (76*)</span><span class="potsch p">SPC</span></div></div>
@@ -983,7 +974,7 @@ function switchStats(name) {
 
 // Countdown
 function tick() {
-  var diff = new Date('2026-03-29T12:00:00+13:00') - new Date();
+  var diff = new Date('2027-03-29T12:00:00+13:00') - new Date();
   if (diff<=0) return;
   document.getElementById('cdd').textContent = String(Math.floor(diff/86400000)).padStart(2,'0');
   document.getElementById('cdh').textContent = String(Math.floor((diff%86400000)/3600000)).padStart(2,'0');
@@ -994,6 +985,7 @@ tick(); setInterval(tick,1000);
 
 // Scorecard data
 var SC = {
+  '2026':{title:'SCORECARD 2026',meta:'St. Josephs won by 3 runs · 29 Mar 2026 · Alex Moore Park, Wellington · 35 Overs\nSJC Captain: Keshan Perera  ·  SPC Captain: Herschelle Hendricks\nToss: SPC won toss, elected to bowl',innings:[{lbl:'SJC INNINGS — 152/10 (32.4 overs)',bc:'bsjc',wc:'wspc',bat:[['Keshan Perera (C)','91'],['Rajitha Wickramarathne','15'],['Anjana Fernando','13']],bowl:[['Sanshay Gunatilake','3/15 (3.4)'],['Herschelle Hendricks (C)','3/29 (6)'],['Shevon Perera','2/30 (7)']]},{lbl:'SPC INNINGS — 149/10 (32.3 overs)',bc:'bspc',wc:'wsjc',bat:[['Shevon Perera','24'],['Ewantha Kularathne','21'],['Herschelle Hendricks (C)','16']],bowl:[['Shamal Perera','3/25 (7)'],['Hashan Goonetilleke','2/12 (3.3)'],['Anjana Fernando','1/28 (7)']]}],awards:[['Player of the Match','Keshan Perera (SJC)'],['Best Batsman','Keshan Perera (SJC)'],['Best Bowler','Sanshay Gunatilake (SPC)']]},
   '2025':{title:'SCORECARD 2025',meta:'St. Peters won by 5 wickets · 16 Mar 2025 · Takapuna District CC, Auckland · 40 Overs\nSJC Captain: Anjana Fernando  ·  SPC Captain: Lahiru Manawadu\nToss: SPC won toss, elected to bowl',innings:[{lbl:'SJC INNINGS — 180/10 (39.4 overs)',bc:'bsjc',wc:'wspc',bat:[['Rajitha Wickramarathna','36'],['Jehan Variath','35*'],['Keshan Perera','30']],bowl:[['Shevon Perera','3/28 (7)'],['Santhush Gunatilake','2/27 (8)'],['Herschelle Hendricks','2/19']]},{lbl:'SPC INNINGS — 182/5 (35.2 overs)',bc:'bspc',wc:'wsjc',bat:[['Shannon Wimalaratne','67'],['Kanishka Dissanaike','56'],['Rehan Jayakody','23']],bowl:[['Sachin Variath','2/43 (8)'],['Shane Goonasekara','1/5 (1)'],['Jude Pieries','1/26 (6)']]}],awards:[['Player of the Match','Shannon Wimalaratne (SPC)'],['Best Batsman','Kanishka Dissanaike (SPC)'],['Best Bowler','Shevon Perera (SPC)'],['Best Fielder','Kevin Alexander (SPC)']]},
   '2024':{title:'SCORECARD 2024',meta:'St. Peters won by 44 runs · 30 Oct 2024 · Linden Park, Wellington · 40 Overs\nSJC Captain: Shamal Perera  ·  SPC Captain: Shevon Perera\nToss: SJC won toss, elected to bowl',innings:[{lbl:'SPC INNINGS — 231/9 (40 overs)',bc:'bspc',wc:'wsjc',bat:[['Shevon Perera (C)','52'],['Riyan Perera','47'],['Nilanka Balasuriya','28']],bowl:[['Hashan Goonetilleke','3/32 (6)'],['Anjana Fernando','2/29 (8)'],['Rasangana Perera','2/32 (5)']]},{lbl:'SJC INNINGS — 187/10 (38.2 overs)',bc:'bsjc',wc:'wspc',bat:[['Anjana Fernando','36'],['Rashan De Silva','30'],['Shamal Perera (C)','23']],bowl:[['Shevon Perera (C)','3/28 (7)'],['Santhush Gunatilake','2/27 (8)'],['Herschelle Hendricks','2/19']]}],awards:[['Player of the Match','Shevon Perera (C) (SPC)'],['Best Batsman','Riyan Perera (SPC)'],['Best Bowler','Hashan Goonetilleke (SJC)']]},
   '2023':{title:'SCORECARD 2023',meta:'St. Peters won by 5 wickets · 26 Mar 2023 · Takapuna District CC, Auckland · 35 Overs\nSJC Captain: Sachin Variath  ·  SPC Captain: Riyan Perera\nToss: SPC won toss, elected to bowl',innings:[{lbl:'SJC INNINGS — 153/10 (35 overs)',bc:'bsjc',wc:'wspc',bat:[['Hashan Goonetilleke','49'],['Sachin Variath (C)','48'],['Shamal Perera','22*']],bowl:[['Dimuthu Liyanage','4/31 (7)'],['Santhush Gunatilake','2/16 (7)'],['Kevin Alexander','1/15 (4)']]},{lbl:'SPC INNINGS — 158/5 (23.5 overs)',bc:'bspc',wc:'wsjc',bat:[['Santhush Gunatilake','76*'],['Riyan Perera (C)','27'],['Rehan Jayakody','18*']],bowl:[['Ravindu Pathirana','2/18 (7)'],['Anjana Fernando','2/51 (6)'],['Reshan Perera','1/25 (3)']]}],awards:[['Player of the Match','Santhush Gunatilake (SPC)'],['Best Batsman','Hashan Goonetilleke (SJC)'],['Best Bowler','Dimuthu Liyanage (SPC)']]},
